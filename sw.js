@@ -1,4 +1,4 @@
-const CACHE = 'sotay-v1';
+const CACHE = 'sotay-v2';
 const ASSETS = [
   './',
   './index.html',
@@ -29,6 +29,22 @@ self.addEventListener('fetch', e => {
 
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
+
+  const isHTML = req.mode === 'navigate' ||
+    (req.headers.get('accept') || '').includes('text/html');
+
+  if (isHTML) {
+    e.respondWith(
+      fetch(req).then(resp => {
+        if (resp && resp.status === 200 && resp.type === 'basic') {
+          const copy = resp.clone();
+          caches.open(CACHE).then(c => c.put(req, copy));
+        }
+        return resp;
+      }).catch(() => caches.match(req).then(c => c || caches.match('./index.html')))
+    );
+    return;
+  }
 
   e.respondWith(
     caches.match(req).then(cached => {
