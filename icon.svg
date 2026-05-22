@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1f1b15"/>
+  <rect x="32" y="32" width="448" height="448" rx="24" fill="#f4ede0"/>
+
+  <rect x="60" y="60" width="392" height="392" rx="12" fill="none" stroke="#c9a248" stroke-width="3" stroke-dasharray="2 6"/>
+
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#b03a2e" stroke-width="6" stroke-dasharray="6 8" opacity="0.85"/>
+  <circle cx="256" cy="256" r="142" fill="none" stroke="#b03a2e" stroke-width="2" opacity="0.6"/>
+
+  <text x="256" y="295" font-family="Songti SC, STSong, serif" font-size="200" font-weight="700"
+        fill="#b03a2e" text-anchor="middle" letter-spacing="-4">话</text>
+
+  <text x="256" y="120" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="34"
+        font-weight="600" fill="#1f1b15" text-anchor="middle" letter-spacing="6">SỔ TAY</text>
+
+  <text x="256" y="425" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="26"
+        fill="#5a4f3d" text-anchor="middle" letter-spacing="4">phrasebook</text>
+
+  <circle cx="80" cy="80" r="6" fill="#c9a248"/>
+  <circle cx="432" cy="80" r="6" fill="#c9a248"/>
+  <circle cx="80" cy="432" r="6" fill="#c9a248"/>
+  <circle cx="432" cy="432" r="6" fill="#c9a248"/>
+</svg>

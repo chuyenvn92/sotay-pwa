@@ -1,0 +1,18 @@
+{
+  "name": "Sổ Tay Du Lịch · Travel Phrasebook",
+  "short_name": "Sổ Tay",
+  "description": "Phrasebook tiếng Trung cho người Việt — dùng offline",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4ede0",
+  "theme_color": "#f4ede0",
+  "lang": "vi",
+  "categories": ["travel", "education", "reference"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
